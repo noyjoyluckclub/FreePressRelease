@@ -1,385 +1,124 @@
-/* Real Use Cases Section */
+/* Real Use Cases — Editorial Card Grid */
+
 .use-cases {
-    padding: 6rem 2rem;
-    background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
-    position: relative;
-    overflow: hidden;
+    background: var(--paper-2);
+    padding: 7rem 0;
 }
 
-.use-cases .section-header {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.use-cases .section-header h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: var(--text-color);
-    position: relative;
-    display: inline-block;
-}
-
-.use-cases .section-header h2::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 4px;
-    background: var(--gradient);
-    border-radius: 2px;
-}
-
-.use-cases .tagline {
-    font-size: 1.5rem;
-    color: var(--primary-color);
-    margin-bottom: 3rem;
-    font-weight: 600;
-    text-align: center;
-    display: block;
-}
-
-.intro-paragraph {
-    max-width: 800px;
-    margin: 0 auto 4rem;
-    text-align: center;
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #4b5563;
-}
+.use-cases .section-header { margin-bottom: 4rem; }
 
 .use-cases-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-bottom: 4rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--ink);
+    border-left: 1px solid var(--ink);
+    background: var(--paper);
 }
 
 .use-case-card {
-    background: white;
-    border-radius: 16px;
-    padding: 2.5rem 2rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
-    transition: all 0.3s ease;
-    border: 1px solid #e5e7eb;
-    position: relative;
+    background: var(--paper);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-right: 1px solid var(--ink);
+    border-bottom: 1px solid var(--ink);
+    transition: var(--transition);
     overflow: hidden;
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.6s ease, transform 0.6s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.use-case-card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 4px;
+    height: 0;
+    background: var(--red);
+    transition: height .35s ease;
+}
+
+.use-case-card:hover::before { height: 100%; }
+.use-case-card:hover { background: var(--paper-soft); }
+
+.use-case-card .card-header {
+    padding: 1.6rem 1.8rem;
+    border-bottom: 1px solid var(--rule-soft);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: transparent;
+}
+
+.use-case-card .card-icon {
+    width: 48px; height: 48px;
+    border: 1px solid var(--ink);
+    border-radius: 50%;
+    background: transparent;
+    color: var(--red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: var(--transition);
+    flex-shrink: 0;
+}
+
+.use-case-card:hover .card-icon {
+    background: var(--ink);
+    color: var(--red-bright);
+    transform: rotate(-8deg);
+}
+
+.use-case-card .card-header h3 {
+    font-family: 'Fraunces', serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0;
+    color: var(--ink);
+    line-height: 1.2;
+}
+
+.use-case-card .card-body {
+    padding: 1.6rem 1.8rem;
+    flex: 1;
     display: flex;
     flex-direction: column;
 }
 
-.use-case-card.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.use-case-card:hover {
-    transform: translateY(-5px) !important;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-}
-
-.use-case-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background: var(--gradient);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.use-case-card:hover::before {
-    opacity: 1;
-}
-
-/* Simple Use Case List Section */
-.use-case-list {
-    max-width: 100%;
-    margin: 3rem auto;
-    padding: 0 2rem;
-}
-
-.use-case-list h3 {
-    text-align: center;
-    font-size: 1.8rem;
-    margin-bottom: 2rem;
-    color: #1a1a1a;
-}
-
-.use-case-list-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
-    max-width: 1000px;
-    margin: 2rem auto;
-}
-
-.use-case-item {
-    flex: 1 1 250px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background: #f8f9ff;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease;
-}
-
-.use-case-item:hover {
-    transform: translateY(-3px);
-}
-
-.use-case-item i {
-    color: #2a69ff;
-    font-size: 1.2rem;
-}
-
-/* Responsive Styles for Simple List */
-@media (max-width: 768px) {
-    .use-case-list {
-        padding: 0 1rem;
-    }
-
-    .use-case-list h3 {
-        font-size: 1.5rem;
-    }
-
-    .use-case-item {
-        flex-basis: 100%;
-    }
-}
-
-.card-icon {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: rgba(79, 70, 229, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1.5rem;
-    font-size: 1.5rem;
-    color: var(--primary-color);
-    transition: all 0.3s ease;
-}
-
-.use-case-card:hover .card-icon {
-    background: var(--gradient);
-    color: white;
-    transform: scale(1.1);
-}
-
-.use-case-card h3 {
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
-    color: #111827;
-    position: relative;
-    padding-bottom: 0.8rem;
-}
-
-.use-case-card h3::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 40px;
-    height: 3px;
-    background: var(--gradient);
-    border-radius: 2px;
-    transition: width 0.3s ease;
-}
-
-.use-case-card:hover h3::after {
-    width: 70px;
-}
-
-.use-case-card p {
-    color: #4b5563;
-    line-height: 1.7;
-    margin-bottom: 1.5rem;
+.use-case-card .card-body p {
+    font-family: 'Instrument Sans', sans-serif;
+    color: var(--ink-soft);
+    line-height: 1.65;
+    margin: 0 0 1.2rem 0;
     flex-grow: 1;
+    font-size: 0.98rem;
 }
 
-.card-footer {
+.use-case-card .card-tags {
     display: flex;
-    gap: 0.5rem;
-    margin-top: auto;
+    gap: .5rem;
     flex-wrap: wrap;
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px dashed var(--rule-soft);
 }
 
-.tag {
-    font-size: 0.75rem;
-    font-weight: 600;
-    padding: 0.25rem 0.75rem;
-    border-radius: 50px;
-    background: #f3f4f6;
-    color: #4b5563;
-    transition: all 0.3s ease;
-}
-
-.use-case-card:hover .tag {
-    background: var(--primary-color);
-    color: white;
-}
-
-.cta-box {
-    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
-    border-radius: 16px;
-    padding: 3rem;
-    color: white;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 15px 40px rgba(79, 70, 229, 0.2);
-}
-
-.cta-box::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    right: -50%;
-    width: 100%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
-    transform: rotate(30deg);
-    pointer-events: none;
-}
-
-.cta-content h3 {
-    font-size: 2rem;
-    margin: 0 0 1rem;
-    color: white;
-}
-
-.cta-content p {
-    font-size: 1.1rem;
-    opacity: 0.9;
-    margin-bottom: 2rem;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.btn-large {
-    padding: 1rem 2rem;
-    font-size: 1.1rem;
-    font-weight: 600;
-    border-radius: 50px;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    transition: all 0.3s ease;
-    background: white;
-    color: var(--primary-color);
-    text-decoration: none;
-}
-
-.btn-large:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.btn-large i {
-    transition: transform 0.3s ease;
-}
-
-.btn-large:hover i {
-    transform: translateX(5px);
-}
-
-/* Responsive Styles */
-@media (max-width: 1024px) {
-    .use-cases {
-        padding: 5rem 1.5rem;
-    }
-    
-    .use-cases .section-header h2 {
-        font-size: 2.2rem;
-    }
-    
-    .use-cases .tagline {
-        font-size: 1.3rem;
-    }
-    
-    .use-cases-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+.use-case-card .tag {
+    font-family: 'JetBrains Mono', monospace;
+    background: transparent;
+    color: var(--ink);
+    padding: 4px 10px;
+    border-radius: 0;
+    border: 1px solid var(--ink);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 500;
 }
 
 @media (max-width: 768px) {
-    .use-cases {
-        padding: 4rem 1.25rem;
-    }
-    
-    .use-cases .section-header h2 {
-        font-size: 2rem;
-    }
-    
-    .use-cases .tagline {
-        font-size: 1.2rem;
-        margin-bottom: 2rem;
-    }
-    
-    .use-cases-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-    
-    .use-case-card {
-        padding: 2rem 1.5rem;
-    }
-    
-    .cta-box {
-        padding: 2rem 1.5rem;
-    }
-    
-    .cta-content h3 {
-        font-size: 1.75rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .use-cases .section-header h2 {
-        font-size: 1.75rem;
-    }
-    
-    .cta-content h3 {
-        font-size: 1.5rem;
-    }
-    
-    .btn-large {
-        width: 100%;
-        justify-content: center;
-    }
-    
-    .use-case-card {
-        width: 100%;
-    }
-}
-
-@media (max-width: 576px) {
-    .use-cases {
-        padding: 3rem 1.5rem;
-    }
-
-    .use-case-card {
-        padding: 1.5rem;
-    }
-
-    .use-case-icon {
-        font-size: 2rem;
-        margin-bottom: 0.75rem;
-    }
-
-    .use-case-card h3 {
-        font-size: 1.25rem;
-    }
+    .use-cases-grid { grid-template-columns: 1fr; }
+    .use-case-card .card-header,
+    .use-case-card .card-body { padding: 1.3rem; }
 }

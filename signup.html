@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Free Press Release</title>
+    <title>Sign Up - Free Press Release</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..900,0..100,0..1;1,9..144,300..900,0..100,0..1&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -23,7 +23,7 @@
                 <li><a href="index.html#easy-steps">How It Works</a></li>
                 <li><a href="index.html#success-stories">Testimonials</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.html" class="login-btn-header active">Login</a></li>
+                <li><a href="login.html" class="login-btn-header">Login</a></li>
             </ul>
             <div class="hamburger">
                 <div class="line"></div>
@@ -34,35 +34,53 @@
     </header>
 
     <!-- Auth Main -->
-    <main class="auth-main" data-watermark="Login.">
+    <main class="auth-main" data-watermark="Subscribe.">
         <div class="auth-wrap">
             <!-- Editorial Aside -->
             <aside class="auth-aside">
                 <div class="auth-masthead">
-                    <span class="auth-masthead-tag">Members' Desk</span>
-                    <span class="auth-masthead-date">Daily Edition · Press Pass</span>
+                    <span class="auth-masthead-tag">New Subscriber</span>
+                    <span class="auth-masthead-date">Daily Edition · Free Forever</span>
                 </div>
-                <h1>Welcome <em>back</em> to the desk.</h1>
-                <p class="auth-lede">Pick up where you left off. Manage drafts, monitor distribution, and ship your next press release in minutes.</p>
+                <h1>Join the <em>wire</em>. Skip the paywall.</h1>
+                <p class="auth-lede">Open an account in seconds and start publishing free press releases that actually get seen — by readers, journalists, and search engines.</p>
 
                 <ul class="auth-points">
-                    <li><i class="fas fa-paper-plane"></i><span><strong>Resume any draft</strong> — your work is autosaved between sessions.</span></li>
-                    <li><i class="fas fa-chart-line"></i><span><strong>Track distribution</strong> — see who picked up your story and where it landed.</span></li>
-                    <li><i class="fas fa-newspaper"></i><span><strong>Submit again, free</strong> — no limits, no paywalls, no resets.</span></li>
+                    <li><i class="fas fa-bolt"></i><span><strong>Instant publishing</strong> — most submissions go live within 30 minutes.</span></li>
+                    <li><i class="fab fa-google"></i><span><strong>Google News indexed</strong> — get discovered by the people who matter.</span></li>
+                    <li><i class="fas fa-infinity"></i><span><strong>Permanent URLs</strong> — your story stays online for good. No expirations.</span></li>
+                    <li><i class="fas fa-lock-open"></i><span><strong>No credit card, ever</strong> — we mean free, and we mean it for real.</span></li>
                 </ul>
 
-                <p class="auth-footnote">— <span>The Press</span> · Free Distribution Since Day One</p>
+                <p class="auth-footnote">— <span>The Press</span> · Over 100,000 Releases Delivered</p>
             </aside>
 
             <!-- Form Card -->
             <div class="auth-card">
                 <div class="auth-card-head">
-                    <span class="auth-card-eyebrow"><span class="dot"></span>Sign In<span class="dot"></span></span>
-                    <h2>Welcome Back</h2>
-                    <p>Sign in to your FreePressRelease account</p>
+                    <span class="auth-card-eyebrow"><span class="dot"></span>Create Account<span class="dot"></span></span>
+                    <h2>Start Publishing</h2>
+                    <p>Free, fast, and built for storytellers</p>
                 </div>
 
-                <form class="auth-form" id="loginForm" novalidate>
+                <form class="auth-form" id="signupForm" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <div class="input-wrap">
+                                <i class="fas fa-user input-icon"></i>
+                                <input type="text" id="firstName" name="firstName" placeholder="Ada" autocomplete="given-name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <div class="input-wrap">
+                                <i class="fas fa-user input-icon"></i>
+                                <input type="text" id="lastName" name="lastName" placeholder="Lovelace" autocomplete="family-name" required>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="form-group">
                         <label for="email">Email Address</label>
                         <div class="input-wrap">
@@ -72,33 +90,42 @@
                     </div>
 
                     <div class="form-group">
-                        <div class="label-row">
-                            <label for="password">Password</label>
-                            <a href="forgot-password.html" class="label-hint">Forgot?</a>
+                        <label for="company">Company / Outlet <span style="text-transform:none;letter-spacing:0;font-weight:400;color:var(--ink-muted);font-size:.72rem;">— optional</span></label>
+                        <div class="input-wrap">
+                            <i class="fas fa-newspaper input-icon"></i>
+                            <input type="text" id="company" name="company" placeholder="Your company name" autocomplete="organization">
                         </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
                         <div class="input-wrap">
                             <i class="fas fa-lock input-icon"></i>
-                            <input type="password" id="password" name="password" placeholder="••••••••••••" autocomplete="current-password" required>
+                            <input type="password" id="password" name="password" placeholder="At least 8 characters" autocomplete="new-password" minlength="8" required>
                             <button type="button" class="password-toggle" aria-label="Toggle password visibility">
                                 <i class="far fa-eye"></i>
                             </button>
                         </div>
+                        <div class="password-strength" aria-hidden="true">
+                            <div class="strength-bar"></div>
+                            <div class="strength-bar"></div>
+                            <div class="strength-bar"></div>
+                            <div class="strength-bar"></div>
+                        </div>
+                        <span class="strength-label" id="strengthLabel">Strength: —</span>
                     </div>
 
-                    <div class="remember-forgot">
-                        <div class="remember-me">
-                            <input type="checkbox" id="remember" name="remember">
-                            <label for="remember">Keep me signed in</label>
-                        </div>
-                        <a href="forgot-password.html" class="forgot-password">Reset password →</a>
+                    <div class="terms-row">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I agree to the <a href="terms-of-use.html">Terms of Use</a> and <a href="privacy-policy.html">Privacy Policy</a>.</label>
                     </div>
 
                     <button type="submit" class="auth-submit">
-                        <span>Sign In</span>
+                        <span>Create Account</span>
                         <i class="fas fa-arrow-right"></i>
                     </button>
 
-                    <div class="divider"><span>Or continue with</span></div>
+                    <div class="divider"><span>Or sign up with</span></div>
 
                     <div class="social-login">
                         <button type="button" class="social-btn google-btn">
@@ -112,7 +139,7 @@
                     </div>
 
                     <p class="signup-link">
-                        New to the desk? <a href="signup.html">Create an account</a>
+                        Already filing stories? <a href="login.html">Sign in</a>
                     </p>
                 </form>
             </div>
@@ -157,7 +184,7 @@
 
     <script src="js/main.js"></script>
     <script>
-        // Password visibility toggle
+        // Password toggle
         document.querySelectorAll('.password-toggle').forEach(btn => {
             btn.addEventListener('click', function() {
                 const input = this.parentElement.querySelector('input');
@@ -172,18 +199,39 @@
             });
         });
 
-        // Form submission
-        document.getElementById('loginForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const email = document.getElementById('email').value;
-            const password = document.getElementById('password').value;
-            if (email && password) {
-                console.log('Login attempt with:', email);
-            }
+        // Password strength
+        const passwordInput = document.getElementById('password');
+        const bars = document.querySelectorAll('.password-strength .strength-bar');
+        const label = document.getElementById('strengthLabel');
+        function scorePassword(pwd) {
+            let score = 0;
+            if (pwd.length >= 8) score++;
+            if (pwd.length >= 12) score++;
+            if (/[A-Z]/.test(pwd) && /[a-z]/.test(pwd)) score++;
+            if (/\d/.test(pwd) && /[^A-Za-z0-9]/.test(pwd)) score++;
+            return score;
+        }
+        passwordInput.addEventListener('input', () => {
+            const score = scorePassword(passwordInput.value);
+            const classes = ['weak', 'weak', 'medium', 'medium', 'strong'];
+            bars.forEach((b, i) => {
+                b.classList.remove('active', 'weak', 'medium', 'strong');
+                if (i < score) {
+                    b.classList.add('active', classes[score]);
+                }
+            });
+            const labels = ['—', 'Weak', 'Fair', 'Good', 'Strong'];
+            label.textContent = 'Strength: ' + labels[score];
         });
 
-        document.querySelector('.google-btn')?.addEventListener('click', () => console.log('Google login'));
-        document.querySelector('.facebook-btn')?.addEventListener('click', () => console.log('Facebook login'));
+        // Submit
+        document.getElementById('signupForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            console.log('Signup submitted');
+        });
+
+        document.querySelector('.google-btn')?.addEventListener('click', () => console.log('Google signup'));
+        document.querySelector('.facebook-btn')?.addEventListener('click', () => console.log('Facebook signup'));
     </script>
 </body>
 </html>

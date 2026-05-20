@@ -19,7 +19,9 @@
     <link rel="stylesheet" href="css/cta-section.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..900,0..100,0..1;1,9..144,300..900,0..100,0..1&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Preloader -->
@@ -49,32 +51,58 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content" style="max-width: 100%; text-align: center;">
-            <h1>Submit & Publish Your Press Release For Free!</h1>
-            <p class="subtitle" style="max-width: 800px; margin: 0 auto 2rem;">Skip the paywalls. Reach thousands with a free press release that gets indexed, discovered, and shared. Fast, SEO-optimized, and actually useful.</p>
-            
-            <div class="feature-labels" style="display: flex; justify-content: space-between; max-width: 800px; margin: 0 auto 2rem; flex-wrap: wrap; gap: 1rem;">
-                <div class="feature-label" style="display: flex; align-items: center; gap: 8px; font-weight: 600;">
-                    <i class="fas fa-check-circle" style="color: #4CAF50;"></i>
-                    <span>100% Free</span>
+        <div class="hero-frame">
+            <div class="hero-masthead">
+                <span class="masthead-vol"></span>
+                <span class="masthead-name">The Free Press Release</span>
+                <span class="masthead-date">Daily Edition · Free Distribution</span>
+            </div>
+            <div class="hero-rule double"></div>
+            <div class="hero-content">
+                <div class="hero-eyebrow"><span class="dot"></span><span>For Immediate Release</span><span class="dot"></span></div>
+                <h1>Submit &amp; Publish Your Press Release For Free!</h1>
+                <p class="subtitle">Skip the paywalls. Reach thousands with a free press release that gets indexed, discovered, and shared. Fast, SEO-optimized, and actually useful.</p>
+
+                <div class="feature-labels">
+                    <div class="feature-label">
+                        <i class="fas fa-check-circle"></i>
+                        <span>100% Free</span>
+                    </div>
+                    <div class="feature-label">
+                        <i class="fas fa-robot"></i>
+                        <span>Automated Approval</span>
+                    </div>
+                    <div class="feature-label">
+                        <i class="fas fa-unlock"></i>
+                        <span>No Paywalls</span>
+                    </div>
+                    <div class="feature-label">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>No Spam</span>
+                    </div>
                 </div>
-                <div class="feature-label" style="display: flex; align-items: center; gap: 8px; font-weight: 600;">
-                    <i class="fas fa-robot" style="color: #2196F3;"></i>
-                    <span>Automated Approval</span>
-                </div>
-                <div class="feature-label" style="display: flex; align-items: center; gap: 8px; font-weight: 600;">
-                    <i class="fas fa-unlock" style="color: #FF9800;"></i>
-                    <span>No Paywalls</span>
-                </div>
-                <div class="feature-label" style="display: flex; align-items: center; gap: 8px; font-weight: 600;">
-                    <i class="fas fa-shield-alt" style="color: #9C27B0;"></i>
-                    <span>No Spam</span>
+
+                <div class="cta-buttons">
+                    <a href="https://my.freepressrelease.io" target="_blank" class="btn btn-primary">Submit Your Free Press Release Now</a>
+                    <a href="#easy-steps" class="btn btn-secondary">Learn How It Works</a>
                 </div>
             </div>
-            
-            <div class="cta-buttons" style="justify-content: center;">
-                <a href="https://my.freepressrelease.io" target="_blank" class="btn btn-primary">Submit Your Free Press Release Now</a>
-                <a href="#easy-steps" class="btn btn-secondary">Learn How It Works</a>
+            <div class="hero-rule"></div>
+            <div class="hero-marquee">
+                <div class="marquee-track">
+                    <span>Google News indexed</span><span aria-hidden="true">✦</span>
+                    <span>5,000+ media outlets</span><span aria-hidden="true">✦</span>
+                    <span>25+ countries</span><span aria-hidden="true">✦</span>
+                    <span>Permanent URLs</span><span aria-hidden="true">✦</span>
+                    <span>No credit card</span><span aria-hidden="true">✦</span>
+                    <span>Published in minutes</span><span aria-hidden="true">✦</span>
+                    <span>Google News indexed</span><span aria-hidden="true">✦</span>
+                    <span>5,000+ media outlets</span><span aria-hidden="true">✦</span>
+                    <span>25+ countries</span><span aria-hidden="true">✦</span>
+                    <span>Permanent URLs</span><span aria-hidden="true">✦</span>
+                    <span>No credit card</span><span aria-hidden="true">✦</span>
+                    <span>Published in minutes</span><span aria-hidden="true">✦</span>
+                </div>
             </div>
         </div>
     </section>
@@ -246,9 +274,8 @@
                 </div>
             </div>
         </section>
-        </section>
-        </section>
 
+        <section class="comparison-block">
             <div class="comparison-section">
                 <h3>Free Press Release vs. Other "Free" PR Sites</h3>
                 <div class="comparison-table">
@@ -301,7 +328,6 @@
                     <a href="https://my.freepressrelease.io" target="_blank" class="btn btn-primary">Submit Your Free Press Release</a>
                 </div>
             </div>
-        </div>
     </section>
 
     <!-- 4 Easy Steps Section -->
@@ -405,12 +431,12 @@
                                     <span>Preview Mode</span>
                                 </div>
                             </div>
-                            <div class="preview-footer" style="display: flex; gap: 1rem; justify-content: flex-end; padding: 1rem; background: #f8f9fa; border-top: 1px solid #e9ecef; border-radius: 0 0 8px 8px;" onclick="return false;">
-                                <button disabled style="padding: 0.5rem 1.25rem; border: 1px solid #2a69ff; color: #2a69ff; background: white; border-radius: 4px; font-weight: 500; opacity: 0.7; display: inline-flex; align-items: center; cursor: not-allowed; pointer-events: none;">
-                                    <i class="fas fa-edit" style="margin-right: 6px;"></i>Edit
+                            <div class="preview-footer" onclick="return false;">
+                                <button disabled class="preview-btn preview-btn-edit">
+                                    <i class="fas fa-edit"></i>Edit
                                 </button>
-                                <button disabled style="padding: 0.5rem 1.25rem; background: #2a69ff; color: white; border: none; border-radius: 4px; font-weight: 500; opacity: 0.7; display: inline-flex; align-items: center; cursor: not-allowed; pointer-events: none;">
-                                    <i class="fas fa-paper-plane" style="margin-right: 6px;"></i>Submit Now
+                                <button disabled class="preview-btn preview-btn-submit">
+                                    <i class="fas fa-paper-plane"></i>Submit Now
                                 </button>
                             </div>
                         </div>
@@ -421,8 +447,8 @@
                 <div class="connecting-line"></div>
             </div>
             
-            <div class="cta-buttons" style="display: flex; justify-content: center;">
-                <a href="https://my.freepressrelease.io" target="_blank" class="btn btn-primary btn-large" style="margin: 0 auto;">
+            <div class="cta-buttons cta-buttons-centered">
+                <a href="https://my.freepressrelease.io" target="_blank" class="btn btn-primary btn-large">
                     <i class="fas fa-paper-plane"></i> Start Your Press Release
                 </a>
             </div>
@@ -513,7 +539,7 @@
         </div>
 
         <!-- Clear Note for Premium Distribution -->
-        <p style="text-align:center; font-size: 14px; color: #666; margin-top: 1rem;">
+        <p class="premium-note">
             * Yahoo! Finance, MarketWatch, and Benzinga require an additional fee.
         </p>
 
@@ -969,7 +995,7 @@
                 </div>
             </div>
             
-            <div style="text-align:center; margin-top: 2rem;">
+            <div class="testimonial-leave-wrap">
                 <button class="btn btn-secondary" onclick="openTestimonialPopup()">Leave a Testimonial</button>
             </div>
             <div id="testimonial-popup" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:1000; overflow-y:auto;">
@@ -1029,7 +1055,7 @@
 
                 </div>
             </div>
-</section                  
+</section>
 <!-- Benefits of Free Press Release Section -->
     <section id="benefits" class="benefits-section">
         <div class="container">
@@ -1116,97 +1142,13 @@
     </section>
 
     <!-- Real Use Cases Section -->
-    <section id="use-cases" class="use-cases" style="background-color: #f8f9ff; padding: 5rem 0;">
-        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
-            <div class="section-header" style="text-align: center; margin-bottom: 3rem;">
-                <span class="section-tag" style="display: inline-block; color: #2a69ff; font-weight: 600; font-size: 1rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1rem;">Who Benefits?</span>
-                <h2 style="font-size: 2.5rem; color: #1a1a1a; margin: 0 0 1rem 0; line-height: 1.3;">Real Use Cases for <span style="color: #2a69ff;">Free Press Release</span></h2>
-                <p class="tagline" style="font-size: 1.2rem; color: #555; max-width: 700px; margin: 0 auto;">Discover how different professionals and businesses leverage our free press release service to achieve their goals</p>
+    <section id="use-cases" class="use-cases">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Who Benefits?</span>
+                <h2>Real Use Cases for <span>Free Press Release</span></h2>
+                <p class="tagline">Discover how different professionals and businesses leverage our free press release service to achieve their goals</p>
             </div>
-            
-            <style>
-                .use-cases-grid {
-                    display: grid;
-                    grid-template-columns: 1fr;
-                    gap: 2rem;
-                    margin-top: 3rem;
-                }
-                @media (min-width: 768px) {
-                    .use-cases-grid {
-                        grid-template-columns: repeat(2, 1fr);
-                    }
-                }
-                .use-case-card {
-                    display: flex;
-                    flex-direction: column;
-                    height: 100%;
-                    background: white;
-                    border-radius: 12px;
-                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-                    border: 1px solid #e2e8f0;
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                    overflow: hidden;
-                }
-                .use-case-card:hover {
-                    transform: translateY(-5px);
-                    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-                }
-                .card-header {
-                    padding: 1.5rem;
-                    background: #f8f9ff;
-                    border-bottom: 1px solid #e2e8f0;
-                    display: flex;
-                    align-items: center;
-                    gap: 1rem;
-                }
-                .card-icon {
-                    width: 40px;
-                    height: 40px;
-                    border-radius: 50%;
-                    background: #F2F2F2;
-                    color: #2a69ff;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    font-size: 1.2rem;
-                    transition: all 0.3s ease;
-                }
-                .use-case-card:hover .card-icon {
-                    background: #2a69ff;
-                    color: white;
-                    transform: scale(1.1);
-                }
-                .card-header h3 {
-                    margin: 0;
-                    font-size: 1.2rem;
-                    color: #1a1a1a;
-                }
-                .card-body {
-                    padding: 1.5rem;
-                    flex: 1;
-                    display: flex;
-                    flex-direction: column;
-                }
-                .card-body p {
-                    margin: 0 0 1rem 0;
-                    color: #4b5563;
-                    line-height: 1.6;
-                    flex-grow: 1;
-                }
-                .card-tags {
-                    display: flex;
-                    gap: 0.5rem;
-                    margin-top: 1rem;
-                }
-                .tag {
-                    background: #f0f4ff;
-                    color: #2a69ff;
-                    padding: 0.25rem 0.75rem;
-                    border-radius: 50px;
-                    font-size: 0.8rem;
-                    font-weight: 500;
-                }
-            </style>
             <div class="use-cases-grid">
                 <!-- Row 1 -->
                 <!-- Use Case 1: Startups -->
@@ -1367,16 +1309,15 @@
                 </div>
             </div>
         <!-- CTA Box -->
-        <div class="cta-box" style="background: linear-gradient(135deg, #2a69ff 0%, #6c5ce7 100%); color: white; border-radius: 12px; padding: 3rem; margin-top: 4rem; text-align: center; position: relative; overflow: hidden;">
-            <div style="position: relative; z-index: 2;">
-                <h3 style="font-size: 2rem; margin: 0 0 1rem 0;">Ready to Share Your Story?</h3>
-                <p style="font-size: 1.1rem; max-width: 700px; margin: 0 auto 2rem; opacity: 0.9;">Join thousands of businesses and individuals who trust Free Press Release for their media outreach.</p>
-                <a href="https://my.freepressrelease.io" target="_blank" class="cta-button" style="display: inline-block; background: white; color: #2a69ff; padding: 0.8rem 2rem; border-radius: 50px; text-decoration: none; font-weight: 600; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-                    Submit Your Free Press Release
+        <div class="cta-box editorial-cta">
+            <div class="cta-inner">
+                <span class="cta-eyebrow">— Final Edition —</span>
+                <h3>Ready to Share Your Story?</h3>
+                <p>Join thousands of businesses and individuals who trust Free Press Release for their media outreach.</p>
+                <a href="https://my.freepressrelease.io" target="_blank" class="cta-button">
+                    Submit Your Free Press Release <span aria-hidden="true">→</span>
                 </a>
             </div>
-            <div style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: rgba(255,255,255,0.1); border-radius: 50%;"></div>
-            <div style="position: absolute; bottom: -80px; left: -30px; width: 200px; height: 200px; background: rgba(255,255,255,0.1); border-radius: 50%;"></div>
         </div>
             <div class="comparison-cta">
                 <div class="cta-content">
@@ -1394,143 +1335,98 @@
         </div>
     </section>
 <!-- Best Sites to Submit Free Press Releases Section -->
-<section id="best-pr-sites" class="best-pr-sites" style="padding: 3rem 1rem; background-color: #f8fafc;">
-    <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 1rem;">
-        <div class="section-header" style="text-align: center; margin-bottom: 2rem;">
-            <h2 style="color: var(--text-color); font-size: 1.75rem; margin-bottom: 1rem; line-height: 1.3;">What are the Best Sites to Submit Free Press Releases?</h2>
-            <p class="tagline" style="font-size: 1.1rem; color: var(--primary-color); max-width: 100%; margin: 0 auto 1rem; font-weight: 500; padding: 0 1rem;">
-                Maximize Your Reach with These Top Free Press Release Platforms
-            </p>
-            <p style="font-size: 1rem; color: #4b5563; max-width: 100%; margin: 0 auto; line-height: 1.6; padding: 0 1rem;">
+<section id="best-pr-sites" class="best-pr-sites">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">The Distribution Map</span>
+            <h2>What are the Best Sites to Submit Free Press Releases?</h2>
+            <p class="tagline">Maximize Your Reach with These Top Free Press Release Platforms</p>
+            <p class="section-lede">
                 While we're proud to offer one of the best free press release distribution services, we believe in giving you all the tools for success. Here are some of the top platforms where you can submit your press releases for free, along with tips for each:
             </p>
         </div>
 
         <!-- Main Platforms Grid (2x2) -->
-        <div class="platforms-grid" style="display: grid; grid-template-columns: 1fr; gap: 2rem; margin-bottom: 3rem; max-width: 1200px; margin-left: auto; margin-right: auto; padding: 0 1rem;">
-            <style>
-                @media (min-width: 768px) {
-                    .platforms-grid {
-                        grid-template-columns: repeat(2, 1fr) !important;
-                        gap: 2rem !important;
-                        align-items: stretch;
-                    }
-                }
-                .platform-card {
-                    display: flex !important;
-                    flex-direction: column !important;
-                    height: 100%;
-                }
-                .platform-body {
-                    flex: 1;
-                    display: flex !important;
-                    flex-direction: column !important;
-                }
-                .platform-body > div {
-                    flex-grow: 1;
-                }
-            </style>
-            <!-- Row 1 -->
+        <div class="platforms-grid">
             <!-- FreePressRelease Card -->
-            <div class="platform-card" style="background: white; border-radius: 12px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); border: 1px solid #e2e8f0; transition: transform 0.3s ease, box-shadow 0.3s ease; max-width: 100%; margin: 0;">
-                <div class="platform-header" style="background: linear-gradient(135deg, #4361ee 0%, #3f37c9 100%); padding: 1.25rem; color: white;">
-                    <h3 style="margin: 0; font-size: 1.25rem; display: flex; align-items: center; gap: 8px; justify-content: center; flex-wrap: wrap; text-align: center;">
+            <div class="platform-card platform-card--primary">
+                <div class="platform-header">
+                    <span class="platform-index">01</span>
+                    <h3>
                         <i class="fas fa-paper-plane"></i>
                         FreePressRelease.io
                     </h3>
                 </div>
-                <div class="platform-body" style="padding: 1.25rem; display: flex; flex-direction: column; height: 100%;">
-                    <div style="flex-grow: 1; margin-bottom: 1.25rem;">
-                        <p style="color: #4b5563; margin: 0 0 1rem 0; line-height: 1.6; font-size: 0.95rem;">
-                            <strong style="color: var(--text-color);">Best for:</strong> Complete free distribution with Google News submission
-                        </p>
-                        <p style="color: #4b5563; margin: 0 0 1rem 0; line-height: 1.6; font-size: 0.95rem;">
-                            <strong style="color: var(--text-color);">Word Count:</strong> 300-800 words recommended
-                        </p>
-                        <p style="color: #4b5563; margin: 0; line-height: 1.6; font-size: 0.95rem;">
-                            <strong style="color: var(--text-color);">Tips:</strong> Include high-quality images, use keywords naturally, and add relevant links.
-                        </p>
+                <div class="platform-body">
+                    <div class="platform-meta">
+                        <p><strong>Best for:</strong> Complete free distribution with Google News submission</p>
+                        <p><strong>Word Count:</strong> 300-800 words recommended</p>
+                        <p><strong>Tips:</strong> Include high-quality images, use keywords naturally, and add relevant links.</p>
                     </div>
-                    <a href="#press-release-form" class="btn btn-primary" style="display: block; width: 100%; text-align: center; background: var(--primary-color); color: white; padding: 0.75rem; border-radius: 6px; text-decoration: none; font-weight: 500; transition: background 0.3s ease; border: none; cursor: pointer; font-size: 0.95rem; margin-top: auto; white-space: nowrap; overflow: visible; text-overflow: clip;">
+                    <a href="#press-release-form" class="btn btn-primary platform-cta">
                         Submit Your Press Release
                     </a>
                 </div>
             </div>
 
             <!-- OpenPR Card -->
-            <div class="platform-card" style="background: white; border-radius: 12px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); border: 1px solid #e2e8f0; transition: transform 0.3s ease, box-shadow 0.3s ease; max-width: 100%; margin: 0;">
-                <div class="platform-header" style="background: linear-gradient(135deg, #00a651 0%, #007e3a 100%); padding: 1.25rem; color: white;">
-                    <h3 style="margin: 0; font-size: 1.25rem; display: flex; align-items: center; gap: 8px; justify-content: center; flex-wrap: wrap; text-align: center;">
+            <div class="platform-card">
+                <div class="platform-header">
+                    <span class="platform-index">02</span>
+                    <h3>
                         <i class="fas fa-globe"></i>
                         OpenPR.com
                     </h3>
                 </div>
-                <div class="platform-body" style="padding: 1.25rem; display: flex; flex-direction: column; height: 100%;">
-                    <div style="flex-grow: 1; margin-bottom: 1.25rem;">
-                        <p style="color: #4b5563; margin: 0 0 1rem 0; line-height: 1.6; font-size: 0.95rem;">
-                            <strong style="color: var(--text-color);">Best for:</strong> International reach and media connections
-                        </p>
-                        <p style="color: #4b5563; margin: 0 0 1rem 0; line-height: 1.6; font-size: 0.95rem;">
-                            <strong style="color: var(--text-color);">Word Count:</strong> 400-1000 words
-                        </p>
-                        <p style="color: #4b5563; margin: 0; line-height: 1.6; font-size: 0.95rem;">
-                            <strong style="color: var(--text-color);">Tips:</strong> Focus on newsworthy content and include contact information.
-                        </p>
+                <div class="platform-body">
+                    <div class="platform-meta">
+                        <p><strong>Best for:</strong> International reach and media connections</p>
+                        <p><strong>Word Count:</strong> 400-1000 words</p>
+                        <p><strong>Tips:</strong> Focus on newsworthy content and include contact information.</p>
                     </div>
-                    <a href="https://www.openpr.com/" target="_blank" class="btn" style="display: block; width: 100%; text-align: center; background: #00a651; color: white; padding: 0.75rem; border-radius: 6px; text-decoration: none; font-weight: 500; transition: background 0.3s ease; border: none; cursor: pointer; font-size: 0.95rem; margin-top: auto; white-space: nowrap; overflow: visible; text-overflow: clip;">
+                    <a href="https://www.openpr.com/" target="_blank" class="platform-cta">
                         Visit OpenPR
                     </a>
                 </div>
             </div>
 
-            <!-- Row 2 -->
             <!-- SubmitPressRelease Card -->
-            <div class="platform-card" style="background: white; border-radius: 12px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); border: 1px solid #e2e8f0; transition: transform 0.3s ease, box-shadow 0.3s ease; max-width: 100%; margin: 0;">
-                <div class="platform-header" style="background: linear-gradient(135deg, #ff6b6b 0%, #ee5253 100%); padding: 1.25rem; color: white;">
-                    <h3 style="margin: 0; font-size: 1.25rem; display: flex; align-items: center; gap: 8px; justify-content: center; flex-wrap: wrap; text-align: center;">
+            <div class="platform-card">
+                <div class="platform-header">
+                    <span class="platform-index">03</span>
+                    <h3>
                         <i class="fas fa-upload"></i>
                         SubmitPressRelease.org
                     </h3>
                 </div>
-                <div class="platform-body" style="padding: 1.25rem; display: flex; flex-direction: column; height: 100%;">
-                    <div style="flex-grow: 1; margin-bottom: 1.25rem;">
-                        <p style="color: #4b5563; margin: 0 0 1rem 0; line-height: 1.6; font-size: 0.95rem;">
-                            <strong style="color: var(--text-color);">Best for:</strong> Basic free distribution
-                        </p>
-                        <p style="color: #4b5563; margin: 0 0 1rem 0; line-height: 1.6; font-size: 0.95rem;">
-                            <strong style="color: var(--text-color);">Word Count:</strong> 300-700 words
-                        </p>
-                        <p style="color: #4b5563; margin: 0; line-height: 1.6; font-size: 0.95rem;">
-                            <strong style="color: var(--text-color);">Tips:</strong> Keep your press release concise and to the point.
-                        </p>
+                <div class="platform-body">
+                    <div class="platform-meta">
+                        <p><strong>Best for:</strong> Basic free distribution</p>
+                        <p><strong>Word Count:</strong> 300-700 words</p>
+                        <p><strong>Tips:</strong> Keep your press release concise and to the point.</p>
                     </div>
-                    <a href="https://submitpressrelease.org/" target="_blank" class="btn" style="display: block; width: 100%; text-align: center; background: #ff6b6b; color: white; padding: 0.75rem; border-radius: 6px; text-decoration: none; font-weight: 500; transition: background 0.3s ease; border: none; cursor: pointer; font-size: 0.95rem; margin-top: auto; white-space: nowrap; overflow: visible; text-overflow: clip;">
+                    <a href="https://submitpressrelease.org/" target="_blank" class="platform-cta">
                         Visit SPR
                     </a>
                 </div>
             </div>
 
             <!-- PRLog Card -->
-            <div class="platform-card" style="background: white; border-radius: 12px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); border: 1px solid #e2e8f0; transition: transform 0.3s ease, box-shadow 0.3s ease; max-width: 100%; margin: 0;">
-                <div class="platform-header" style="background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%); padding: 1.25rem; color: white;">
-                    <h3 style="margin: 0; font-size: 1.25rem; display: flex; align-items: center; gap: 8px; justify-content: center; flex-wrap: wrap; text-align: center;">
+            <div class="platform-card">
+                <div class="platform-header">
+                    <span class="platform-index">04</span>
+                    <h3>
                         <i class="fas fa-newspaper"></i>
                         PRLog
                     </h3>
                 </div>
-                <div class="platform-body" style="padding: 1.25rem; display: flex; flex-direction: column; height: 100%;">
-                    <div style="flex-grow: 1; margin-bottom: 1.25rem;">
-                        <p style="color: #4b5563; margin: 0 0 1rem 0; line-height: 1.6; font-size: 0.95rem;">
-                            <strong style="color: var(--text-color);">Best for:</strong> Basic free distribution with SEO benefits
-                        </p>
-                        <p style="color: #4b5563; margin: 0 0 1rem 0; line-height: 1.6; font-size: 0.95rem;">
-                            <strong style="color: var(--text-color);">Word Count:</strong> 300-800 words
-                        </p>
-                        <p style="color: #4b5563; margin: 0; line-height: 1.6; font-size: 0.95rem;">
-                            <strong style="color: var(--text-color);">Tips:</strong> Include images and videos for better engagement.
-                        </p>
+                <div class="platform-body">
+                    <div class="platform-meta">
+                        <p><strong>Best for:</strong> Basic free distribution with SEO benefits</p>
+                        <p><strong>Word Count:</strong> 300-800 words</p>
+                        <p><strong>Tips:</strong> Include images and videos for better engagement.</p>
                     </div>
-                    <a href="https://www.prlog.org/" target="_blank" class="btn" style="display: block; width: 100%; text-align: center; background: #6c5ce7; color: white; padding: 0.75rem; border-radius: 6px; text-decoration: none; font-weight: 500; transition: background 0.3s ease; border: none; cursor: pointer; font-size: 0.95rem; margin-top: auto; white-space: nowrap; overflow: visible; text-overflow: clip;">
+                    <a href="https://www.prlog.org/" target="_blank" class="platform-cta">
                         Visit PRLog
                     </a>
                 </div>
@@ -1538,55 +1434,41 @@
         </div>
 
         <!-- Other Platforms Section -->
-        <div class="other-platforms" style="margin-top: 4rem; padding-top: 3rem; border-top: 1px solid #e2e8f0;">
-            <h3 style="text-align: center; font-size: 1.5rem; margin-bottom: 1.25rem; color: var(--text-color);">Other Platforms to Consider</h3>
-            <p style="text-align: center; color: #4b5563; max-width: 100%; margin: 0 auto 2rem; font-size: 1rem; line-height: 1.6; padding: 0 1rem;">
+        <div class="other-platforms">
+            <h3>Other Platforms to Consider</h3>
+            <p class="other-platforms-lede">
                 Expand your reach by sharing your press release on these additional platforms
             </p>
-            
-            <div class="other-platforms-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; max-width: 100%; margin: 0 auto;">
-                <!-- Row 1 -->
-                <a href="https://wordpress.com/" target="_blank" class="other-platform-card" style="background: white; border-radius: 8px; padding: 1.25rem; text-align: center; text-decoration: none; color: #333; border: 1px solid #e2e8f0; transition: all 0.3s ease; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); display: block; height: 100%;">
-                    <div class="platform-icon" style="width: 50px; height: 50px; background: #f0f6ff; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.75rem; font-size: 1.5rem; color: #21759b; transition: transform 0.3s ease;">
-                        <i class="fab fa-wordpress"></i>
-                    </div>
-                    <h4 style="margin: 0; font-size: 1rem; color: var(--text-color); line-height: 1.4;">WordPress.com</h4>
+
+            <div class="other-platforms-grid">
+                <a href="https://wordpress.com/" target="_blank" class="other-platform-card">
+                    <div class="platform-icon"><i class="fab fa-wordpress"></i></div>
+                    <h4>WordPress.com</h4>
                 </a>
 
-                <a href="https://medium.com/" target="_blank" class="other-platform-card" style="background: white; border-radius: 8px; padding: 1.25rem; text-align: center; text-decoration: none; color: #333; border: 1px solid #e2e8f0; transition: all 0.3s ease; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); display: block; height: 100%;">
-                    <div class="platform-icon" style="width: 50px; height: 50px; background: #f0f6ff; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.75rem; font-size: 1.5rem; color: #00ab6c; transition: transform 0.3s ease;">
-                        <i class="fab fa-medium"></i>
-                    </div>
-                    <h4 style="margin: 0; font-size: 1rem; color: var(--text-color); line-height: 1.4;">Medium</h4>
+                <a href="https://medium.com/" target="_blank" class="other-platform-card">
+                    <div class="platform-icon"><i class="fab fa-medium"></i></div>
+                    <h4>Medium</h4>
                 </a>
 
-                <a href="https://www.linkedin.com/" target="_blank" class="other-platform-card" style="background: white; border-radius: 8px; padding: 1.25rem; text-align: center; text-decoration: none; color: #333; border: 1px solid #e2e8f0; transition: all 0.3s ease; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); display: block; height: 100%;">
-                    <div class="platform-icon" style="width: 50px; height: 50px; background: #f0f6ff; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.75rem; font-size: 1.5rem; color: #0077b5; transition: transform 0.3s ease;">
-                        <i class="fab fa-linkedin"></i>
-                    </div>
-                    <h4 style="margin: 0; font-size: 1rem; color: var(--text-color); line-height: 1.4;">LinkedIn</h4>
+                <a href="https://www.linkedin.com/" target="_blank" class="other-platform-card">
+                    <div class="platform-icon"><i class="fab fa-linkedin"></i></div>
+                    <h4>LinkedIn</h4>
                 </a>
 
-                <!-- Row 2 -->
-                <a href="https://www.facebook.com/" target="_blank" class="other-platform-card" style="background: white; border-radius: 8px; padding: 1.25rem; text-align: center; text-decoration: none; color: #333; border: 1px solid #e2e8f0; transition: all 0.3s ease; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); display: block; height: 100%;">
-                    <div class="platform-icon" style="width: 50px; height: 50px; background: #f0f6ff; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.75rem; font-size: 1.5rem; color: #1877f2; transition: transform 0.3s ease;">
-                        <i class="fab fa-facebook"></i>
-                    </div>
-                    <h4 style="margin: 0; font-size: 1rem; color: var(--text-color); line-height: 1.4;">Facebook</h4>
+                <a href="https://www.facebook.com/" target="_blank" class="other-platform-card">
+                    <div class="platform-icon"><i class="fab fa-facebook"></i></div>
+                    <h4>Facebook</h4>
                 </a>
 
-                <a href="#" class="other-platform-card" style="background: white; border-radius: 8px; padding: 1.25rem; text-align: center; text-decoration: none; color: #333; border: 1px solid #e2e8f0; transition: all 0.3s ease; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); display: block; height: 100%;">
-                    <div class="platform-icon" style="width: 50px; height: 50px; background: #f0f6ff; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.75rem; font-size: 1.5rem; color: #e74c3c; transition: transform 0.3s ease;">
-                        <i class="fas fa-file-pdf"></i>
-                    </div>
-                    <h4 style="margin: 0; font-size: 1rem; color: var(--text-color); line-height: 1.4;">PDF Sharing Sites</h4>
+                <a href="#" class="other-platform-card">
+                    <div class="platform-icon"><i class="fas fa-file-pdf"></i></div>
+                    <h4>PDF Sharing Sites</h4>
                 </a>
 
-                <a href="https://www.tumblr.com/" target="_blank" class="other-platform-card" style="background: white; border-radius: 8px; padding: 1.25rem; text-align: center; text-decoration: none; color: #333; border: 1px solid #e2e8f0; transition: all 0.3s ease; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); display: block; height: 100%;">
-                    <div class="platform-icon" style="width: 50px; height: 50px; background: #f0f6ff; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.75rem; font-size: 1.5rem; color: #35465c; transition: transform 0.3s ease;">
-                        <i class="fab fa-tumblr"></i>
-                    </div>
-                    <h4 style="margin: 0; font-size: 1rem; color: var(--text-color); line-height: 1.4;">Tumblr</h4>
+                <a href="https://www.tumblr.com/" target="_blank" class="other-platform-card">
+                    <div class="platform-icon"><i class="fab fa-tumblr"></i></div>
+                    <h4>Tumblr</h4>
                 </a>
             </div>
         </div>
@@ -1738,7 +1620,7 @@
                 
                 <div class="counter">
                     <i class="fas fa-paper-plane"></i>
-                    <span style="color: #000000;">Over 100,000 free press releases delivered and counting — and we're just getting started.</span>
+                    <span>Over 100,000 free press releases delivered and counting — and we're just getting started.</span>
                 </div>
             </div>
             

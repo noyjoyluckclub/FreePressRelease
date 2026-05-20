@@ -1,123 +1,17 @@
-/* Our Values Section */
-.our-values {
-    padding: 4rem 1.5rem;
-    background-color: #f8fafc;
-    position: relative;
-    overflow-x: auto;
-}
+/* Our Values — see style.css for primary rules */
 
-.our-values .container {
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
+/* Specific overrides */
 .our-values .section-header {
     text-align: center;
-    margin-bottom: 3rem;
+    max-width: 920px;
+    margin: 0 auto 4rem;
 }
-
-.our-values h2 {
-    font-size: 2.25rem;
-    color: #1a1a1a;
-    margin-bottom: 1rem;
-    font-weight: 700;
-    line-height: 1.2;
-}
-
-.our-values .tagline {
-    font-size: 1.1rem;
-    color: #4b5563;
-    line-height: 1.7;
-    margin: 0 auto;
-    max-width: 800px;
-}
-
-.values-grid {
-    display: flex;
-    gap: 1.5rem;
-    margin-top: 2rem;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-/* Individual Value Card */
-.value-card {
-    background: white;
-    border-radius: 12px;
-    padding: 2rem 1.5rem;
+.our-values .section-header .tagline {
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid #e5e7eb;
-    flex: 1 1 250px;
-    max-width: 280px;
-}
-
-.value-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
-}
-
-.value-icon {
-    width: 70px;
-    height: 70px;
-    margin: 0 auto 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(135deg, #f0f4ff 0%, #e6f0ff 100%);
-    border-radius: 50%;
-    color: #3b82f6;
-    font-size: 1.75rem;
-}
-
-.value-card h3 {
-    font-size: 1.4rem; /* Slightly reduced from 1.5rem */
-    color: #1a1a1a;
-    margin-bottom: 1rem;
-    font-weight: 600;
-}
-
-.value-card p {
-    color: #4b5563;
-    font-size: 1rem; /* Slightly reduced from 1.05rem */
-    line-height: 1.6; /* Slightly reduced from 1.7 */
-    margin: 0;
-}
-
-/* Hide horizontal scrollbar but keep functionality */
-.our-values::-webkit-scrollbar {
-    height: 6px;
-}
-
-.our-values::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 10px;
-}
-
-.our-values::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 10px;
-}
-
-.our-values::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media (max-width: 768px) {
-    .our-values {
-        padding: 3rem 1rem;
-    }
-
-    .our-values h2 {
-        font-size: 1.8rem;
-    }
-
-    .our-values .tagline {
-        font-size: 1rem;
-    }
-
-    .value-card {
-        flex-basis: 100%;
-        max-width: none;
-    }
+    .our-values { padding: 4.5rem 0; }
 }
