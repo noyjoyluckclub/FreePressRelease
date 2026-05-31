@@ -1,0 +1,14 @@
+# Netlify rewrites for freepressrelease.io
+# ---------------------------------------------------------------------------
+# Published press releases are RENDERED by the portal app
+# (my.freepressrelease.io) but SERVED under this apex. Status 200 = a rewrite
+# (proxy): Netlify fetches the target and serves it while the browser URL stays
+# freepressrelease.io/press/<slug>. (A 301/302 would change the visible URL —
+# don't use those here.) First match wins, so list /press before any catch-all.
+
+/press                https://my.freepressrelease.io/press             200
+/press/*              https://my.freepressrelease.io/press/:splat       200
+
+# DB-backed sitemap + RSS for the release pages.
+/press-sitemap.xml    https://my.freepressrelease.io/sitemap.xml        200
+/press-rss.xml        https://my.freepressrelease.io/rss                200

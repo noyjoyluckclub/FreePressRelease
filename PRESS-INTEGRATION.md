@@ -12,21 +12,25 @@ under the apex so the public URL is `freepressrelease.io/press/<slug>`.
 
 ## 1. `/press` reverse proxy (this site)
 
-`.htaccess` path-proxies the apex `/press/*` to the portal app:
+The apex `/press/*` is proxied to the portal app so the public URL is preserved:
 
 ```
 freepressrelease.io/press/my-title  →  my.freepressrelease.io/press/my-title
 ```
 
-- Requires Apache **mod_proxy + mod_proxy_http + mod_rewrite** (usually on by
-  default on cPanel). Verify with your host.
-- If mod_proxy is unavailable, do the rewrite at the edge instead — e.g. a
-  Cloudflare rule, or host this static site on a platform with rewrites
-  (Vercel/Netlify) and translate `.htaccess` into that platform's rewrite config.
-- A plain 301/302 redirect is **not** a substitute: it would change the browser
-  URL to `my.freepressrelease.io`, defeating the apex-canonical goal.
+**This site is hosted on Netlify, so `_redirects` is the active config.** Netlify
+status `200` rules are rewrites/proxies (the browser URL stays on the apex); a
+`301/302` would change the visible URL to `my.freepressrelease.io` and defeat the
+apex-canonical goal. The `_redirects` file must be in the Netlify **publish
+directory** (the repo root here, since this is a no-build static site) — confirm
+your site's Publish directory in Netlify is `.` / root, or move `_redirects`
+accordingly. After deploy, verify at `https://app.netlify.com` → Deploys → the
+latest deploy shows the redirect rules were processed.
 
-`.htaccess` also proxies `/press-sitemap.xml` and `/press-rss.xml` to the app's
+`.htaccess` (also in this repo) is the equivalent for Apache/cPanel hosts and is
+ignored by Netlify — keep it only as a fallback if the site ever moves hosts.
+
+Both configs also proxy `/press-sitemap.xml` and `/press-rss.xml` to the app's
 `/sitemap.xml` and `/rss` (DB-backed). Reference `/press-sitemap.xml` from this
 site's `robots.txt`/sitemap so the release URLs get indexed under the apex.
 
