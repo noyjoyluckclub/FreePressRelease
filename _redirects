@@ -9,6 +9,11 @@
 /press                https://my.freepressrelease.io/press             200
 /press/*              https://my.freepressrelease.io/press/:splat       200
 
+# The proxied release pages are Next.js — their CSS/JS/font assets load from
+# /_next/* (absolute paths). Proxy those to the backend too, or the pages render
+# unstyled. This is safe: the static site never uses /_next itself.
+/_next/*              https://my.freepressrelease.io/_next/:splat        200
+
 # DB-backed sitemap + RSS for the release pages.
 /press-sitemap.xml    https://my.freepressrelease.io/sitemap.xml        200
 /press-rss.xml        https://my.freepressrelease.io/rss                200
